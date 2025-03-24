@@ -39,9 +39,15 @@ This WordPress plugin allows you to manage players' details for various games, i
 - The table supports sorting by player name and allows for filtering through a search input.
 - Players' details can be sorted based on different columns, such as name, game category, email, etc.
 
-### 4. Custom Table
+### 4. Scripts and Styles
 
-The plugin creates a table `wp_games` (or any table with the WordPress table prefix) in the database using the following structure:
+-The plugin enqueues Bootstrap CSS for styling the admin pages.
+-A custom JavaScript file is included to handle AJAX requests and form submissions.
+
+
+### 5. Custom Table
+
+- The plugin creates a table `wp_games` (or any table with the WordPress table prefix) in the database using the following structure:
 
 ```sql
 CREATE TABLE wp_games (
@@ -55,7 +61,5 @@ CREATE TABLE wp_games (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-### 5. Scripts and Styles
 
--The plugin enqueues Bootstrap CSS for styling the admin pages.
--A custom JavaScript file is included to handle AJAX requests and form submissions.
+
